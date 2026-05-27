@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script type="module" src="./dist/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-main">
+    <div class="app-ceiling grid place-items-center h-[15vh] bg-(--accent) rounded-b-full">
+        <h1 class="text-white text-xl">Aplikacja kaloryczna</h1>
+    </div>
+    <div class="app-stats mt-5 flex gap-2 p-2">
+        <div class="app-stat p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl bg-[#f0ecec] shadow-lg">
+            <p class="text-xl">🍗</p>
+            <p>Białko</p>
+            <p class="w-full h-2 rounded-full bg-[#E2E8F0]"><span
+                    class="block relative h-full w-[30%] z-0 progress-bar rounded-full protein-progress-bar bg-[#529EE1] before:content-[''] before:inset-0 before:bg-[#529EE1] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35"></span>
+            </p>
+            <p class="app-stat-results"><span class="current">145g</span> / <span class="target">200g</span></p>
+        </div>
+        <div class="app-stat p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl bg-[#f0ecec] shadow-lg">
+            <p class="text-xl">🔥</p>
+            <p>Kalorie</p>
+            <p class="w-full h-2 rounded-full bg-[#E2E8F0]"><span
+                    class="block relative h-full w-1/2 z-0 progress-bar rounded-full protein-progress-bar bg-(--accent) before:content-[''] before:inset-0 before:bg-(--accent) before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35"></span>
+            </p>
+            <p class="app-stat-results"><span class="current">750kcal</span> / <span class="target">2500kcal</span></p>
+        </div>
+        <div class="app-stat p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl bg-[#f0ecec] shadow-lg">
+            <p class="text-xl">🥑</p>
+            <p>Tłuszcze</p>
+            <p class="w-full h-2 rounded-full bg-[#E2E8F0]"><span
+                    class="block relative h-full w-[70%] z-0 progress-bar rounded-full protein-progress-bar bg-[#FDD048] before:content-[''] before:inset-0 before:bg-[#FDD048] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35"></span>
+            </p>
+            <p class="app-stat-results"><span class="current">145g</span> / <span class="target">200g</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

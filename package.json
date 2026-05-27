@@ -1,0 +1,19 @@
+{
+  "name": "apka-kaloryczna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "@tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Tomasz Wojak",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
