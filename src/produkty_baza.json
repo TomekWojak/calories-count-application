@@ -1,0 +1,392 @@
+[
+	{
+		"id": "jajko_l",
+		"name": "Jajko (rozmiar L)",
+		"category": "Nabiał i jajka",
+		"calories": 85,
+		"protein": 7.5,
+		"fat": 5.7,
+		"carbs": 0.4,
+		"type": "pcs"
+	},
+	{
+		"id": "mleko_2",
+		"name": "Mleko 2%",
+		"category": "Nabiał i jajka",
+		"calories": 125,
+		"protein": 8.5,
+		"fat": 5.0,
+		"carbs": 11.8,
+		"type": "ml"
+	},
+	{
+		"id": "mleko_32",
+		"name": "Mleko 3.2%",
+		"category": "Nabiał i jajka",
+		"calories": 150,
+		"protein": 8.3,
+		"fat": 8.0,
+		"carbs": 11.8,
+		"type": "ml"
+	},
+	{
+		"id": "twarog_chudy",
+		"name": "Twaróg chudy",
+		"category": "Nabiał i jajka",
+		"calories": 86,
+		"protein": 18.0,
+		"fat": 0.5,
+		"carbs": 3.5,
+		"type": "g"
+	},
+	{
+		"id": "twarog_poltlusty",
+		"name": "Twaróg półtłusty",
+		"category": "Nabiał i jajka",
+		"calories": 133,
+		"protein": 16.0,
+		"fat": 4.0,
+		"carbs": 3.7,
+		"type": "g"
+	},
+	{
+		"id": "serek_wiejski",
+		"name": "Serek wiejski (opakowanie 200g)",
+		"category": "Nabiał i jajka",
+		"calories": 194,
+		"protein": 22.0,
+		"fat": 10.0,
+		"carbs": 4.0,
+		"type": "pcs"
+	},
+	{
+		"id": "jogurt_naturalny",
+		"name": "Jogurt naturalny",
+		"category": "Nabiał i jajka",
+		"calories": 60,
+		"protein": 4.3,
+		"fat": 2.0,
+		"carbs": 6.2,
+		"type": "g"
+	},
+	{
+		"id": "jogurt_grecki",
+		"name": "Jogurt grecki",
+		"category": "Nabiał i jajka",
+		"calories": 115,
+		"protein": 9.0,
+		"fat": 5.0,
+		"carbs": 4.0,
+		"type": "g"
+	},
+	{
+		"id": "maslo",
+		"name": "Masło ekstra 82%",
+		"category": "Nabiał i jajka",
+		"calories": 743,
+		"protein": 0.7,
+		"fat": 82.0,
+		"carbs": 0.7,
+		"type": "g"
+	},
+	{
+		"id": "ser_zolty_gouda",
+		"name": "Ser żółty Gouda (plaster)",
+		"category": "Nabiał i jajka",
+		"calories": 53,
+		"protein": 3.8,
+		"fat": 4.1,
+		"carbs": 0.0,
+		"type": "pcs"
+	},
+	{
+		"id": "piers_kurczaka",
+		"name": "Pierś z kurczaka (surowa)",
+		"category": "Mięso i ryby",
+		"calories": 120,
+		"protein": 21.5,
+		"fat": 1.3,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "piers_indyka",
+		"name": "Pierś z indyka (surowa)",
+		"category": "Mięso i ryby",
+		"calories": 84,
+		"protein": 19.2,
+		"fat": 0.7,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "mieso_mielone_wolowe_lekkie",
+		"name": "Mięso mielone wołowe chude",
+		"category": "Mięso i ryby",
+		"calories": 134,
+		"protein": 21.6,
+		"fat": 5.0,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "schab_wieprzowy",
+		"name": "Schab wieprzowy (surowy)",
+		"category": "Mięso i ryby",
+		"calories": 152,
+		"protein": 23.0,
+		"fat": 6.3,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "losos_swiezy",
+		"name": "Łosoś świeży (filet)",
+		"category": "Mięso i ryby",
+		"calories": 208,
+		"protein": 20.0,
+		"fat": 13.0,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "tunczyk_w_sosie_wlasnym",
+		"name": "Tuńczyk w sosie własnym (puszka 120g)",
+		"category": "Mięso i ryby",
+		"calories": 115,
+		"protein": 25.2,
+		"fat": 1.4,
+		"carbs": 0.0,
+		"type": "pcs"
+	},
+	{
+		"id": "makrela_wedzona",
+		"name": "Makrela wędzona",
+		"category": "Mięso i ryby",
+		"calories": 244,
+		"protein": 20.7,
+		"fat": 17.8,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "odzywka_bialkowa_whey",
+		"name": "Odżywka białkowa WPC (miarka 30g)",
+		"category": "Suplementy",
+		"calories": 114,
+		"protein": 22.5,
+		"fat": 1.8,
+		"carbs": 2.1,
+		"type": "pcs"
+	},
+	{
+		"id": "ryz_basmati",
+		"name": "Ryż basmati (woreczek 100g)",
+		"category": "Produkty zbożowe",
+		"calories": 351,
+		"protein": 7.5,
+		"fat": 0.5,
+		"carbs": 77.0,
+		"type": "pcs"
+	},
+	{
+		"id": "ryz_bialy",
+		"name": "Ryż biały (woreczek 100g)",
+		"category": "Produkty zbożowe",
+		"calories": 349,
+		"protein": 6.7,
+		"fat": 0.7,
+		"carbs": 76.5,
+		"type": "pcs"
+	},
+	{
+		"id": "kasza_jaglana",
+		"name": "Kasza jaglana (sucha)",
+		"category": "Produkty zbożowe",
+		"calories": 348,
+		"protein": 10.5,
+		"fat": 2.9,
+		"carbs": 68.4,
+		"type": "g"
+	},
+	{
+		"id": "kasza_gryczana",
+		"name": "Kasza gryczana (woreczek 100g)",
+		"category": "Produkty zbożowe",
+		"calories": 336,
+		"protein": 12.0,
+		"fat": 3.0,
+		"carbs": 63.0,
+		"type": "pcs"
+	},
+	{
+		"id": "platki_owsiane",
+		"name": "Płatki owsiane górskie",
+		"category": "Produkty zbożowe",
+		"calories": 376,
+		"protein": 12.0,
+		"fat": 7.2,
+		"carbs": 62.0,
+		"type": "g"
+	},
+	{
+		"id": "makaron_pszenny",
+		"name": "Makaron pszenny (suchy)",
+		"category": "Produkty zbożowe",
+		"calories": 360,
+		"protein": 12.0,
+		"fat": 1.5,
+		"carbs": 72.0,
+		"type": "g"
+	},
+	{
+		"id": "chleb_graham",
+		"name": "Chleb graham (kromka 35g)",
+		"category": "Produkty zbożowe",
+		"calories": 81,
+		"protein": 2.8,
+		"fat": 0.6,
+		"carbs": 15.1,
+		"type": "pcs"
+	},
+	{
+		"id": "ziemniaki",
+		"name": "Ziemniaki (surowe)",
+		"category": "Warzywa",
+		"calories": 77,
+		"protein": 2.0,
+		"fat": 0.1,
+		"carbs": 17.0,
+		"type": "g"
+	},
+	{
+		"id": "oliwa_z_oliwek",
+		"name": "Oliwa z oliwek",
+		"category": "Tłuszcze",
+		"calories": 884,
+		"protein": 0.0,
+		"fat": 100.0,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "olej_rzepakowy",
+		"name": "Olej rzepakowy",
+		"category": "Tłuszcze",
+		"calories": 884,
+		"protein": 0.0,
+		"fat": 100.0,
+		"carbs": 0.0,
+		"type": "g"
+	},
+	{
+		"id": "maslo_orzechowe",
+		"name": "Masło orzechowe (100% orzechów)",
+		"category": "Tłuszcze",
+		"calories": 612,
+		"protein": 25.0,
+		"fat": 50.0,
+		"carbs": 12.0,
+		"type": "g"
+	},
+	{
+		"id": "migdaly",
+		"name": "Migdały",
+		"category": "Tłuszcze",
+		"calories": 579,
+		"protein": 21.0,
+		"fat": 50.0,
+		"carbs": 21.6,
+		"type": "g"
+	},
+	{
+		"id": "orzechy_wloskie",
+		"name": "Orzechy włoskie",
+		"category": "Tłuszcze",
+		"calories": 654,
+		"protein": 15.2,
+		"fat": 65.2,
+		"carbs": 13.7,
+		"type": "g"
+	},
+	{
+		"id": "banan",
+		"name": "Banan (1 średnia sztuka)",
+		"category": "Owoce",
+		"calories": 107,
+		"protein": 1.3,
+		"fat": 0.4,
+		"carbs": 27.4,
+		"type": "pcs"
+	},
+	{
+		"id": "jablko",
+		"name": "Jabłko (1 średnia sztuka)",
+		"category": "Owoce",
+		"calories": 94,
+		"protein": 0.5,
+		"fat": 0.4,
+		"carbs": 24.8,
+		"type": "pcs"
+	},
+	{
+		"id": "ananas",
+		"name": "Ananas świeży",
+		"category": "Owoce",
+		"calories": 50,
+		"protein": 0.5,
+		"fat": 0.1,
+		"carbs": 13.0,
+		"type": "g"
+	},
+	{
+		"id": "awokado",
+		"name": "Awokado (1 sztuka bez pestki)",
+		"category": "Owoce / Tłuszcze",
+		"calories": 240,
+		"protein": 3.0,
+		"fat": 22.0,
+		"carbs": 12.8,
+		"type": "pcs"
+	},
+	{
+		"id": "pomidor",
+		"name": "Pomidor (1 średnia sztuka)",
+		"category": "Warzywa",
+		"calories": 27,
+		"protein": 1.4,
+		"fat": 0.3,
+		"carbs": 5.9,
+		"type": "pcs"
+	},
+	{
+		"id": "brokuly",
+		"name": "Brokuły",
+		"category": "Warzywa",
+		"calories": 34,
+		"protein": 2.8,
+		"fat": 0.4,
+		"carbs": 7.0,
+		"type": "g"
+	},
+	{
+		"id": "sok_pomaranczowy",
+		"name": "Sok pomarańczowy 100%",
+		"category": "Napoje",
+		"calories": 112,
+		"protein": 1.8,
+		"fat": 0.5,
+		"carbs": 26.0,
+		"type": "ml"
+	},
+	{
+		"id": "napoj_izotoniczny",
+		"name": "Napój izotoniczny",
+		"category": "Napoje",
+		"calories": 60,
+		"protein": 0.0,
+		"fat": 0.0,
+		"carbs": 15.0,
+		"type": "ml"
+	}
+]

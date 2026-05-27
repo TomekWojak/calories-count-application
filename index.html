@@ -19,31 +19,39 @@
     </div>
     <div class="app-stats mt-5 flex gap-2 p-2 text-white">
         <div
-            class="app-stat p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl border border-[#9EFB14] shadow-[0px_0px_5px_0px_#9ffb14a3] font-semibold">
+            class="app-stat relative p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl border border-[#9EFB14] shadow-[0px_0px_5px_0px_#9ffb14a3] font-semibold">
+            <img class="finished-icon hidden absolute w-3.5 left-2 top-2" src="./src/img/check-square.svg" alt="">
             <p class="text-xl">🍗</p>
             <p>Białko</p>
-            <p class="w-full h-2 rounded-full bg-[#E2E8F0]"><span
-                    class="block relative h-full w-[70%] z-0 progress-bar rounded-full protein-progress-bar bg-[#9EFB14] before:content-[''] before:inset-0 before:bg-[#9EFB14] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35"></span>
+            <p class="w-full progress-bar-box h-2 rounded-full bg-[#E2E8F0]"><span
+                    class="block relative h-full max-w-full w-0 z-0 progress-bar rounded-full protein-progress-bar bg-[#9EFB14] before:content-[''] before:inset-0 before:bg-[#9EFB14] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35 transition-[width_0.6s_ease]"></span>
+
             </p>
-            <p class="app-stat-results"><span class="current">145g</span> / <span class="target">200g</span></p>
+            <p class="app-stat-results"><span class="current current-protein">0</span>g / <span
+                    class="target target-protein">200</span>g</p>
         </div>
         <div
-            class="app-stat p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl border border-[#9EFB14] shadow-[0px_0px_5px_0px_#9ffb14a3] font-semibold">
+            class="app-stat relative p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl border border-[#9EFB14] shadow-[0px_0px_5px_0px_#9ffb14a3] font-semibold">
+            <img class="finished-icon hidden absolute w-3.5 left-2 top-2" src="./src/img/check-square.svg" alt="">
             <p class="text-xl">🔥</p>
             <p>Kalorie</p>
-            <p class="w-full h-2 rounded-full bg-[#E2E8F0]"><span
-                    class="block relative h-full w-1/2 z-0 progress-bar rounded-full protein-progress-bar bg-[#9EFB14] before:content-[''] before:inset-0 before:bg-[#9EFB14] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35"></span>
+            <p class="progress-bar-box w-full h-2 rounded-full bg-[#E2E8F0]"><span
+                    class="block relative h-full max-w-full z-0 w-0 progress-bar rounded-full protein-progress-bar bg-[#9EFB14] before:content-[''] before:inset-0 before:bg-[#9EFB14] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35 transition-[width_0.6s_ease]"></span>
             </p>
-            <p class="app-stat-results"><span class="current">750kcal</span> / <span class="target">2500kcal</span></p>
+            <p class="app-stat-results"><span class="current current-calories">0</span>kcal / <span
+                    class="target target-calories">2500</span>kcal</p>
         </div>
         <div
-            class="app-stat p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl border border-[#9EFB14] shadow-[0px_0px_5px_0px_#9ffb14a3] font-semibold">
+            class="app-stat relative p-2 text-center flex flex-col gap-1 grow items-center rounded-2xl border border-[#9EFB14] shadow-[0px_0px_5px_0px_#9ffb14a3] font-semibold">
+            <img class="finished-icon hidden absolute w-3.5 left-2 top-2" src="./src/img/check-square.svg" alt="">
             <p class="text-xl">🥑</p>
             <p>Tłuszcze</p>
-            <p class="w-full h-2 rounded-full bg-[#E2E8F0]"><span
-                    class="block relative h-full w-[70%] z-0 progress-bar rounded-full protein-progress-bar bg-[#9EFB14] before:content-[''] before:inset-0 before:bg-[#9EFB14] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35"></span>
+            <p class="w-full h-2 progress-bar-box rounded-full bg-[#E2E8F0]"><span
+                    class="block relative h-full max-w-full z-0 progress-bar w-0 rounded-full protein-progress-bar bg-[#9EFB14] before:content-[''] before:inset-0 before:bg-[#9EFB14] before:absolute before:-z-1 before:rounded-[inherit] before:blur-sm before:opacity-35 transition-[width_0.6s_ease]"></span>
             </p>
-            <p class="app-stat-results"><span class="current">145g</span> / <span class="target">200g</span></p>
+            <p class="app-stat-results"><span class="current current-fats">0</span>g / <span
+                    class="target target-fats">200</span>g
+            </p>
         </div>
     </div>
     <div class="main-content p-2">
@@ -65,32 +73,21 @@
                     </div>
                     <hr class="border-[#9EFB14]/30 my-3">
                     <ul class="custom-select-panel-body max-h-35 overflow-y-auto">
-                        <li class="custom-select-food py-3 px-2 hover:bg-[#333]/20 transition-colors rounded-lg cursor-pointer focus-visible:bg-[#333]/20 focus-visible:outline-0"
-                            role="option" tabindex="0">
-                            Jajko</li>
-                        <li class="custom-select-food py-3 px-2 hover:bg-[#333]/20 transition-colors rounded-lg cursor-pointer focus-visible:bg-[#333]/20 focus-visible:outline-0"
-                            role="option" tabindex="0">
-                            Ananas</li>
-                        <li class="custom-select-food py-3 px-2 hover:bg-[#333]/20 transition-colors rounded-lg cursor-pointer focus-visible:bg-[#333]/20 focus-visible:outline-0"
-                            role="option" tabindex="0">
-                            Masło</li>
-                        <li class="custom-select-food py-3 px-2 hover:bg-[#333]/20 transition-colors rounded-lg cursor-pointer focus-visible:bg-[#333]/20 focus-visible:outline-0"
-                            role="option" tabindex="0">
-                            Masło</li>
-                        <li class="custom-select-food py-3 px-2 hover:bg-[#333]/20 transition-colors rounded-lg cursor-pointer focus-visible:bg-[#333]/20 focus-visible:outline-0"
-                            role="option" tabindex="0">
-                            Masło</li>
+
                     </ul>
                 </div>
             </div>
             <div class="quantity-box w-[40%]">
                 <input type="number"
                     class="block w-full quantity text-white px-2 py-3 border border-[#9EFB14] rounded-lg focus-visible:outline-0 transition-colors bg-[#2424248e]"
-                    placeholder="Ilość">
+                    placeholder="Ilość ml/g">
             </div>
         </div>
+        <!-- <div class="own-calories-box">
+            <input type="text" class="own-calories-input text-white" placeholder="Kcal">
+        </div> -->
         <button
-            class="text-center py-3 mt-3 px-6 bg-(--accent) w-full rounded-lg text-white font-semibold cursor-pointer">Dodaj</button>
+            class="calculate-btn text-center py-3 mt-3 px-6 bg-(--accent) w-full rounded-lg text-white font-semibold cursor-pointer">Dodaj</button>
     </div>
 </body>
 
