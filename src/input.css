@@ -11,11 +11,23 @@
 	width: 5px;
 	border-radius: 50px;
 }
+.history::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 50px;
+}
 .custom-select-panel-body::-webkit-scrollbar-track {
 	background: rgba(158, 251, 20, 0.2);
 	border-radius: 50px;
 }
+.history::-webkit-scrollbar-track {
+	background: rgba(158, 251, 20, 0.2);
+	border-radius: 50px;
+}
 .custom-select-panel-body::-webkit-scrollbar-thumb {
+	background: #9ffb14b5;
+	border-radius: 50px;
+}
+.history::-webkit-scrollbar-thumb {
 	background: #9ffb14b5;
 	border-radius: 50px;
 }

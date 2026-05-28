@@ -171,7 +171,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		const parsed = existingData ? JSON.parse(existingData) : {};
 
-		parsed[productName] = [protein, calories, fats, quantity];
+		if (Object.hasOwn(parsed, productName)) {
+			parsed[productName][0] += protein;
+			parsed[productName][1] += calories;
+			parsed[productName][2] += fats;
+			parsed[productName][3] += quantity;
+		} else {
+			parsed[productName] = [protein, calories, fats, quantity];
+		}
 
 		localStorage.setItem(key, JSON.stringify(parsed));
 	};
@@ -262,7 +269,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		changeValueOfDailyProgress(calories, protein, fats);
 		clearInputs();
 	};
-
 	const addItemToHistory = (
 		productName: string,
 		protein: number,
@@ -270,18 +276,77 @@ document.addEventListener("DOMContentLoaded", function () {
 		fats: number,
 		quantity: number,
 	) => {
+		const existingItem = history?.querySelector<HTMLLIElement>(
+			`[data-product="${productName}"]`,
+		);
+
+		const html = `
+		<p>
+			<span class="product-name font-semibold">${productName}</span>
+			-
+			<span class="quant">${quantity}</span>
+		</p>
+
+		<div class="history-item-stats flex gap-4 mt-3">
+			<p class="p-1 border border-(--accent) bg-(--accent)/30">
+				🍗<span class="history-item-protein ml-1">
+					${protein.toFixed(1)}
+				</span>g
+			</p>
+
+			<p class="p-1 border border-(--accent) bg-(--accent)/30">
+				🔥<span class="history-item-calories ml-1">
+					${calories.toFixed(1)}
+				</span>kcal
+			</p>
+
+			<p class="p-1 border border-(--accent) bg-(--accent)/30">
+				🥑<span class="history-item-fats ml-1">
+					${fats.toFixed(1)}
+				</span>g
+			</p>
+		</div>
+	`;
+
+		if (existingItem) {
+			const quantityElement =
+				existingItem.querySelector<HTMLSpanElement>(".quant");
+			const proteinElement = existingItem.querySelector<HTMLSpanElement>(
+				".history-item-protein",
+			);
+			const caloriesElement = existingItem.querySelector<HTMLSpanElement>(
+				".history-item-calories",
+			);
+			const fatsElement =
+				existingItem.querySelector<HTMLSpanElement>(".history-item-fats");
+
+			if (quantityElement && proteinElement && caloriesElement && fatsElement) {
+				let currentQuantity = Number(quantityElement.textContent);
+				let currentProtein = Number(proteinElement.textContent);
+				let currentCalories = Number(caloriesElement.textContent);
+				let currentFats = Number(fatsElement.textContent);
+
+				quantity += currentQuantity;
+				protein += currentProtein;
+				calories += currentCalories;
+				fats += currentFats;
+
+				quantityElement.textContent = String(quantity);
+				proteinElement.textContent = String(protein);
+				caloriesElement.textContent = String(calories);
+				fatsElement.textContent = String(fats);
+			}
+
+			return;
+		}
+
 		const li = document.createElement("li");
+
+		li.dataset.product = productName;
+
 		setClasses(li, ["history-item", "px-2", "py-3", "bg-[#3333339a]"]);
 
-		li.innerHTML = `<p><span class="product-name font-semibold">${productName}</span> - <span class="quant">${quantity}</span></p>
-		    <div class="history-item-stats flex gap-4 mt-3">
-		        <p class="p-1 border border-(--accent) bg-(--accent)/30">🍗<span
-		                class="history-item-protein ml-1">${protein.toFixed(1)}</span>g</p>
-		        <p class="p-1 border border-(--accent) bg-(--accent)/30">🔥<span
-		                class="history-item-calories ml-1">${calories.toFixed(1)}</span>kcal</p>
-		        <p class="p-1 border border-(--accent) bg-(--accent)/30">🥑<span
-		                class="history-item-fats ml-1">${fats.toFixed(1)}</span>g</p>
-		    </div>`;
+		li.innerHTML = html;
 
 		history?.append(li);
 	};
