@@ -13,6 +13,7 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-semibold: 600;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --blur-sm: 8px;
     --default-transition-duration: 150ms;
@@ -195,6 +196,9 @@
   .-bottom-2 {
     bottom: calc(var(--spacing) * -2);
   }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -323,6 +327,9 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .rounded-b-full {
     border-bottom-right-radius: calc(infinity * 1px);

@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const productsList = document.querySelector(".custom-select-panel-body");
     const calculateBtn = document.querySelector(".calculate-btn");
     const searchEngine = document.querySelector(".custom-select-search-engine input");
+    const clearStorageBtn = document.querySelector(".clear-storage");
     const handleFoodPanel = () => {
         const parent = chooseProductInput?.closest(".custom-select-input-box");
         const arrow = parent?.querySelector(".custom-select-arrow");
@@ -117,6 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
             changeValueOfDailyProgress(dataParsed.calories, dataParsed.protein, dataParsed.fats);
         }
     };
+    const clearStorage = () => {
+        localStorage.removeItem("foodData");
+        window.location.reload();
+    };
     const handleProductSearchEngine = (e) => {
         const products = document.querySelectorAll(".custom-select-food");
         if (e.currentTarget instanceof HTMLInputElement) {
@@ -181,4 +186,5 @@ document.addEventListener("DOMContentLoaded", function () {
     searchEngine?.addEventListener("keyup", handleProductSearchEngine);
     calculateBtn?.addEventListener("click", calculate);
     chooseProductInput?.addEventListener("click", handleFoodPanel);
+    clearStorageBtn?.addEventListener("click", clearStorage);
 });

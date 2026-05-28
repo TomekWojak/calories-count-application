@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const searchEngine = document.querySelector<HTMLInputElement>(
 		".custom-select-search-engine input",
 	);
+	const clearStorageBtn =
+		document.querySelector<HTMLButtonElement>(".clear-storage");
 	const handleFoodPanel = () => {
 		const parent = chooseProductInput?.closest(".custom-select-input-box");
 		const arrow = parent?.querySelector(".custom-select-arrow");
@@ -29,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const loadProductsInfo = async () => {
 		const products = await getProducts();
-
 		products.forEach((product: { name: string }) => {
 			const pr = document.createElement("li");
 			pr.setAttribute("role", "option");
@@ -168,6 +169,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	};
 
+	const clearStorage = () => {
+		localStorage.removeItem("foodData");
+		window.location.reload();
+	};
+
 	const handleProductSearchEngine = (e: Event) => {
 		const products = document.querySelectorAll<HTMLLIElement>(
 			".custom-select-food",
@@ -243,4 +249,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	searchEngine?.addEventListener("keyup", handleProductSearchEngine);
 	calculateBtn?.addEventListener("click", calculate);
 	chooseProductInput?.addEventListener("click", handleFoodPanel);
+	clearStorageBtn?.addEventListener("click", clearStorage);
 });
