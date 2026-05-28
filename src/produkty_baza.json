@@ -51,13 +51,23 @@
 	},
 	{
 		"id": "ser_zolty",
-		"name": "Ser żółty",
+		"name": "Ser żółty (gramy)",
 		"category": "Nabiał i jajka",
 		"calories": 350,
 		"protein": 25.0,
 		"fat": 27.0,
 		"carbs": 1.0,
 		"type": "g"
+	},
+	{
+		"id": "ser_zolty_plaster",
+		"name": "Ser żółty (plaster)",
+		"category": "Nabiał i jajka",
+		"calories": 53,
+		"protein": 3.8,
+		"fat": 4.1,
+		"carbs": 0.1,
+		"type": "pcs"
 	},
 	{
 		"id": "maslo",
@@ -181,13 +191,23 @@
 	},
 	{
 		"id": "chleb",
-		"name": "Chleb",
+		"name": "Kromka chleba (gramy)",
 		"category": "Produkty zbożowe",
 		"calories": 250,
 		"protein": 8.0,
 		"fat": 2.0,
 		"carbs": 50.0,
 		"type": "g"
+	},
+	{
+		"id": "chleb_kromka",
+		"name": "Kromka chleba (sztuka)",
+		"category": "Produkty zbożowe",
+		"calories": 87,
+		"protein": 2.1,
+		"fat": 0.5,
+		"carbs": 18.2,
+		"type": "pcs"
 	},
 	{
 		"id": "bulka",
