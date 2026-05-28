@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	const productsList = document.querySelector(".custom-select-panel-body");
 	const calculateBtn =
 		document.querySelector<HTMLButtonElement>(".calculate-btn");
-
+	const searchEngine = document.querySelector<HTMLInputElement>(
+		".custom-select-search-engine input",
+	);
 	const handleFoodPanel = () => {
 		const parent = chooseProductInput?.closest(".custom-select-input-box");
 		const arrow = parent?.querySelector(".custom-select-arrow");
@@ -165,8 +167,36 @@ document.addEventListener("DOMContentLoaded", function () {
 			);
 		}
 	};
-	getDataFromStorage();
 
+	const handleProductSearchEngine = (e: Event) => {
+		const products = document.querySelectorAll<HTMLLIElement>(
+			".custom-select-food",
+		);
+		if (e.currentTarget instanceof HTMLInputElement) {
+			const input = e.currentTarget;
+
+			const searchEngineValue = input.value.trim().toLowerCase();
+
+			products.forEach((product) => {
+				const productName = product.textContent.toLowerCase();
+				if (productName.includes(searchEngineValue)) {
+					product.classList.remove("hidden");
+				} else {
+					product.classList.add("hidden");
+				}
+			});
+			const allHidden = [...products].every((product) =>
+				product.classList.contains("hidden"),
+			);
+			const emptyInfo = document.querySelector<HTMLLIElement>(".empty-info");
+
+			if (allHidden && emptyInfo) {
+				emptyInfo.classList.remove("hidden");
+			} else {
+				emptyInfo?.classList.add("hidden");
+			}
+		}
+	};
 	const calculate = async () => {
 		const quantity = getQuantityFromInput();
 		const userSelectedOption = checkSelection();
@@ -198,6 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		clearInputs();
 	};
 	loadProductsInfo();
+	getDataFromStorage();
 	productsList?.addEventListener("click", (e) => {
 		if (e.target instanceof HTMLElement) {
 			if (e.target.closest(".custom-select-food")) {
@@ -209,6 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
+	searchEngine?.addEventListener("keyup", handleProductSearchEngine);
 	calculateBtn?.addEventListener("click", calculate);
 	chooseProductInput?.addEventListener("click", handleFoodPanel);
 });

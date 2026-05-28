@@ -12,7 +12,6 @@
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-semibold: 600;
-    --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --blur-sm: 8px;
@@ -253,23 +252,14 @@
   .w-3\.5 {
     width: calc(var(--spacing) * 3.5);
   }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
-  }
   .w-5 {
     width: calc(var(--spacing) * 5);
-  }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
   }
   .w-\[40\%\] {
     width: 40%;
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-0 {
-    max-width: calc(var(--spacing) * 0);
   }
   .max-w-full {
     max-width: 100%;
@@ -407,8 +397,8 @@
   .caret-white {
     caret-color: var(--color-white);
   }
-  .shadow-\[0px_0px_5px_0px_\#9ffb14a3\] {
-    --tw-shadow: 0px 0px 5px 0px var(--tw-shadow-color, #9ffb14a3);
+  .shadow-\[0px_0px_5px_0px_\#9ffb1438\] {
+    --tw-shadow: 0px 0px 5px 0px var(--tw-shadow-color, #9ffb1438);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
