@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	);
 	const clearStorageBtn =
 		document.querySelector<HTMLButtonElement>(".clear-storage");
+	const history = document.querySelector<HTMLUListElement>(".history");
+
 	const handleFoodPanel = () => {
 		const parent = chooseProductInput?.closest(".custom-select-input-box");
 		const arrow = parent?.querySelector(".custom-select-arrow");
@@ -156,6 +158,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		const data = JSON.stringify({ calories, fats, protein });
 		localStorage.setItem("foodData", data);
 	};
+	const setProductDataToStorage = (
+		calories: number,
+		fats: number,
+		protein: number,
+		productName: string,
+		quantity: number,
+	) => {
+		const key = "products";
+
+		const existingData = localStorage.getItem(key);
+
+		const parsed = existingData ? JSON.parse(existingData) : {};
+
+		parsed[productName] = [protein, calories, fats, quantity];
+
+		localStorage.setItem(key, JSON.stringify(parsed));
+	};
 	const getDataFromStorage = () => {
 		const data = localStorage.getItem("foodData");
 		if (data) {
@@ -171,6 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const clearStorage = () => {
 		localStorage.removeItem("foodData");
+		localStorage.removeItem("products");
 		window.location.reload();
 	};
 
@@ -211,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (quantity == null || !userSelectedOption) return;
 
 		const selectedProduct: {
+			name: string;
 			type: "g" | "ml" | "pcs";
 			calories: number;
 			protein: number;
@@ -230,9 +251,58 @@ document.addEventListener("DOMContentLoaded", function () {
 			protein = quantity * selectedProduct.protein;
 			fats = quantity * selectedProduct.fat;
 		}
+		addItemToHistory(selectedProduct.name, protein, calories, fats, quantity);
+		setProductDataToStorage(
+			calories,
+			fats,
+			protein,
+			selectedProduct.name,
+			quantity,
+		);
 		changeValueOfDailyProgress(calories, protein, fats);
 		clearInputs();
 	};
+
+	const addItemToHistory = (
+		productName: string,
+		protein: number,
+		calories: number,
+		fats: number,
+		quantity: number,
+	) => {
+		const li = document.createElement("li");
+		setClasses(li, ["history-item", "px-2", "py-3", "bg-[#3333339a]"]);
+
+		li.innerHTML = `<p><span class="product-name font-semibold">${productName}</span> - <span class="quant">${quantity}</span></p>
+		    <div class="history-item-stats flex gap-4 mt-3">
+		        <p class="p-1 border border-(--accent) bg-(--accent)/30">🍗<span
+		                class="history-item-protein ml-1">${protein.toFixed(1)}</span>g</p>
+		        <p class="p-1 border border-(--accent) bg-(--accent)/30">🔥<span
+		                class="history-item-calories ml-1">${calories.toFixed(1)}</span>kcal</p>
+		        <p class="p-1 border border-(--accent) bg-(--accent)/30">🥑<span
+		                class="history-item-fats ml-1">${fats.toFixed(1)}</span>g</p>
+		    </div>`;
+
+		history?.append(li);
+	};
+
+	const loadHistory = () => {
+		const products = localStorage.getItem("products");
+
+		if (products) {
+			const dataParsed = JSON.parse(products);
+			for (const product in dataParsed) {
+				const protein = dataParsed[product][0];
+				const calories = dataParsed[product][1];
+				const fats = dataParsed[product][2];
+				const quantity = dataParsed[product][3];
+
+				addItemToHistory(product, protein, calories, fats, quantity);
+			}
+		}
+	};
+
+	loadHistory();
 	loadProductsInfo();
 	getDataFromStorage();
 	productsList?.addEventListener("click", (e) => {

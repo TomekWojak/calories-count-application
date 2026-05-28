@@ -1,692 +1,692 @@
 [
-	{
-		"id": "jajko_l",
-		"name": "Jajko",
-		"category": "Nabiał i jajka",
-		"calories": 78,
-		"protein": 7.0,
-		"fat": 5.3,
-		"carbs": 0.4,
-		"type": "pcs"
-	},
-	{
-		"id": "mleko_2",
-		"name": "Mleko 2%",
-		"category": "Nabiał i jajka",
-		"calories": 125,
-		"protein": 8.5,
-		"fat": 5.0,
-		"carbs": 11.8,
-		"type": "ml"
-	},
-	{
-		"id": "twarog_chudy",
-		"name": "Twaróg chudy",
-		"category": "Nabiał i jajka",
-		"calories": 99,
-		"protein": 19.0,
-		"fat": 0.5,
-		"carbs": 3.5,
-		"type": "g"
-	},
-	{
-		"id": "serek_wiejski",
-		"name": "Serek wiejski",
-		"category": "Nabiał i jajka",
-		"calories": 97,
-		"protein": 11.0,
-		"fat": 5.0,
-		"carbs": 4.0,
-		"type": "g"
-	},
-	{
-		"id": "jogurt_grecki",
-		"name": "Jogurt grecki",
-		"category": "Nabiał i jajka",
-		"calories": 97,
-		"protein": 8.5,
-		"fat": 4.8,
-		"carbs": 3.8,
-		"type": "g"
-	},
-	{
-		"id": "ser_zolty",
-		"name": "Ser żółty (gramy)",
-		"category": "Nabiał i jajka",
-		"calories": 350,
-		"protein": 25.0,
-		"fat": 27.0,
-		"carbs": 1.0,
-		"type": "g"
-	},
-	{
-		"id": "ser_zolty_plaster",
-		"name": "Ser żółty (plaster)",
-		"category": "Nabiał i jajka",
-		"calories": 53,
-		"protein": 3.8,
-		"fat": 4.1,
-		"carbs": 0.1,
-		"type": "pcs"
-	},
-	{
-		"id": "maslo",
-		"name": "Masło",
-		"category": "Nabiał i jajka",
-		"calories": 720,
-		"protein": 1.0,
-		"fat": 81.0,
-		"carbs": 1.0,
-		"type": "g"
-	},
-	{
-		"id": "piers_kurczaka",
-		"name": "Pierś z kurczaka",
-		"category": "Mięso i ryby",
-		"calories": 120,
-		"protein": 22.0,
-		"fat": 2.0,
-		"carbs": 0.0,
-		"type": "g"
-	},
-	{
-		"id": "schab",
-		"name": "Schab",
-		"category": "Mięso i ryby",
-		"calories": 145,
-		"protein": 21.0,
-		"fat": 6.0,
-		"carbs": 0.0,
-		"type": "g"
-	},
-	{
-		"id": "kielbasa_zwyczajna",
-		"name": "Kiełbasa zwyczajna",
-		"category": "Mięso i ryby",
-		"calories": 290,
-		"protein": 14.0,
-		"fat": 26.0,
-		"carbs": 2.0,
-		"type": "g"
-	},
-	{
-		"id": "szynka",
-		"name": "Szynka",
-		"category": "Mięso i ryby",
-		"calories": 120,
-		"protein": 19.0,
-		"fat": 4.0,
-		"carbs": 1.0,
-		"type": "g"
-	},
-	{
-		"id": "parowki",
-		"name": "Parówki",
-		"category": "Mięso i ryby",
-		"calories": 270,
-		"protein": 11.0,
-		"fat": 24.0,
-		"carbs": 3.0,
-		"type": "g"
-	},
-	{
-		"id": "losos",
-		"name": "Łosoś",
-		"category": "Mięso i ryby",
-		"calories": 200,
-		"protein": 20.0,
-		"fat": 13.0,
-		"carbs": 0.0,
-		"type": "g"
-	},
-	{
-		"id": "tunczyk",
-		"name": "Tuńczyk",
-		"category": "Mięso i ryby",
-		"calories": 115,
-		"protein": 25.0,
-		"fat": 1.0,
-		"carbs": 0.0,
-		"type": "g"
-	},
-	{
-		"id": "salami",
-		"name": "Salami",
-		"category": "Mięso i ryby",
-		"calories": 400,
-		"protein": 22.0,
-		"fat": 34.0,
-		"carbs": 2.0,
-		"type": "g"
-	},
-	{
-		"id": "ryz_bialy",
-		"name": "Ryż biały",
-		"category": "Produkty zbożowe",
-		"calories": 350,
-		"protein": 7.0,
-		"fat": 1.0,
-		"carbs": 78.0,
-		"type": "g"
-	},
-	{
-		"id": "makaron",
-		"name": "Makaron",
-		"category": "Produkty zbożowe",
-		"calories": 360,
-		"protein": 12.0,
-		"fat": 1.5,
-		"carbs": 72.0,
-		"type": "g"
-	},
-	{
-		"id": "platki_owsiane",
-		"name": "Płatki owsiane",
-		"category": "Produkty zbożowe",
-		"calories": 370,
-		"protein": 12.0,
-		"fat": 7.0,
-		"carbs": 60.0,
-		"type": "g"
-	},
-	{
-		"id": "chleb",
-		"name": "Kromka chleba (gramy)",
-		"category": "Produkty zbożowe",
-		"calories": 250,
-		"protein": 8.0,
-		"fat": 2.0,
-		"carbs": 50.0,
-		"type": "g"
-	},
-	{
-		"id": "chleb_kromka",
-		"name": "Kromka chleba (sztuka)",
-		"category": "Produkty zbożowe",
-		"calories": 87,
-		"protein": 2.1,
-		"fat": 0.5,
-		"carbs": 18.2,
-		"type": "pcs"
-	},
-	{
-		"id": "bulka",
-		"name": "Bułka",
-		"category": "Produkty zbożowe",
-		"calories": 270,
-		"protein": 8.0,
-		"fat": 3.0,
-		"carbs": 55.0,
-		"type": "g"
-	},
-	{
-		"id": "bagietka",
-		"name": "Bagietka",
-		"category": "Produkty zbożowe",
-		"calories": 280,
-		"protein": 8.0,
-		"fat": 1.5,
-		"carbs": 57.0,
-		"type": "g"
-	},
-	{
-		"id": "tortilla",
-		"name": "Tortilla",
-		"category": "Produkty zbożowe",
-		"calories": 310,
-		"protein": 8.0,
-		"fat": 8.0,
-		"carbs": 50.0,
-		"type": "g"
-	},
-	{
-		"id": "kajzerka",
-		"name": "Bułka kajzerka",
-		"category": "Produkty zbożowe",
-		"calories": 270,
-		"protein": 8.0,
-		"fat": 3.0,
-		"carbs": 55.0,
-		"type": "g"
-	},
-	{
-		"id": "chleb_tostowy",
-		"name": "Chleb tostowy",
-		"category": "Produkty zbożowe",
-		"calories": 265,
-		"protein": 8.0,
-		"fat": 4.0,
-		"carbs": 49.0,
-		"type": "g"
-	},
-	{
-		"id": "ziemniaki",
-		"name": "Ziemniaki",
-		"category": "Warzywa",
-		"calories": 77,
-		"protein": 2.0,
-		"fat": 0.1,
-		"carbs": 17.0,
-		"type": "g"
-	},
-	{
-		"id": "pomidor",
-		"name": "Pomidor",
-		"category": "Warzywa",
-		"calories": 19,
-		"protein": 1.0,
-		"fat": 0.2,
-		"carbs": 4.0,
-		"type": "g"
-	},
-	{
-		"id": "ogorek",
-		"name": "Ogórek",
-		"category": "Warzywa",
-		"calories": 15,
-		"protein": 0.7,
-		"fat": 0.1,
-		"carbs": 3.0,
-		"type": "g"
-	},
-	{
-		"id": "papryka",
-		"name": "Papryka",
-		"category": "Warzywa",
-		"calories": 31,
-		"protein": 1.0,
-		"fat": 0.3,
-		"carbs": 6.0,
-		"type": "g"
-	},
-	{
-		"id": "cebula",
-		"name": "Cebula",
-		"category": "Warzywa",
-		"calories": 40,
-		"protein": 1.0,
-		"fat": 0.1,
-		"carbs": 9.0,
-		"type": "g"
-	},
-	{
-		"id": "banan",
-		"name": "Banan",
-		"category": "Owoce",
-		"calories": 95,
-		"protein": 1.1,
-		"fat": 0.3,
-		"carbs": 23.0,
-		"type": "pcs"
-	},
-	{
-		"id": "jablko",
-		"name": "Jabłko",
-		"category": "Owoce",
-		"calories": 80,
-		"protein": 0.4,
-		"fat": 0.2,
-		"carbs": 21.0,
-		"type": "pcs"
-	},
-	{
-		"id": "truskawki",
-		"name": "Truskawki",
-		"category": "Owoce",
-		"calories": 32,
-		"protein": 0.7,
-		"fat": 0.3,
-		"carbs": 7.0,
-		"type": "g"
-	},
-	{
-		"id": "winogrona",
-		"name": "Winogrona",
-		"category": "Owoce",
-		"calories": 69,
-		"protein": 0.7,
-		"fat": 0.2,
-		"carbs": 18.0,
-		"type": "g"
-	},
-	{
-		"id": "maslo_orzechowe",
-		"name": "Masło orzechowe",
-		"category": "Tłuszcze",
-		"calories": 600,
-		"protein": 25.0,
-		"fat": 49.0,
-		"carbs": 14.0,
-		"type": "g"
-	},
-	{
-		"id": "oliwa",
-		"name": "Oliwa z oliwek",
-		"category": "Tłuszcze",
-		"calories": 884,
-		"protein": 0.0,
-		"fat": 100.0,
-		"carbs": 0.0,
-		"type": "g"
-	},
-	{
-		"id": "orzechy_wloskie",
-		"name": "Orzechy włoskie",
-		"category": "Tłuszcze",
-		"calories": 650,
-		"protein": 15.0,
-		"fat": 65.0,
-		"carbs": 14.0,
-		"type": "g"
-	},
-	{
-		"id": "majonez",
-		"name": "Majonez",
-		"category": "Dodatki",
-		"calories": 680,
-		"protein": 1.0,
-		"fat": 75.0,
-		"carbs": 2.0,
-		"type": "g"
-	},
-	{
-		"id": "ketchup",
-		"name": "Ketchup",
-		"category": "Dodatki",
-		"calories": 100,
-		"protein": 1.0,
-		"fat": 0.3,
-		"carbs": 24.0,
-		"type": "g"
-	},
-	{
-		"id": "musztarda",
-		"name": "Musztarda",
-		"category": "Dodatki",
-		"calories": 66,
-		"protein": 4.0,
-		"fat": 4.0,
-		"carbs": 6.0,
-		"type": "g"
-	},
-	{
-		"id": "sos_czosnkowy",
-		"name": "Sos czosnkowy",
-		"category": "Dodatki",
-		"calories": 350,
-		"protein": 2.0,
-		"fat": 35.0,
-		"carbs": 5.0,
-		"type": "g"
-	},
-	{
-		"id": "cola",
-		"name": "Cola",
-		"category": "Napoje",
-		"calories": 105,
-		"protein": 0.0,
-		"fat": 0.0,
-		"carbs": 26.5,
-		"type": "ml"
-	},
-	{
-		"id": "sok_pomaranczowy",
-		"name": "Sok pomarańczowy",
-		"category": "Napoje",
-		"calories": 113,
-		"protein": 1.8,
-		"fat": 0.5,
-		"carbs": 25.0,
-		"type": "ml"
-	},
-	{
-		"id": "energetyk",
-		"name": "Energetyk",
-		"category": "Napoje",
-		"calories": 113,
-		"protein": 0.0,
-		"fat": 0.0,
-		"carbs": 27.5,
-		"type": "ml"
-	},
-	{
-		"id": "ice_tea",
-		"name": "Ice tea",
-		"category": "Napoje",
-		"calories": 70,
-		"protein": 0.0,
-		"fat": 0.0,
-		"carbs": 17.5,
-		"type": "ml"
-	},
-	{
-		"id": "kawa_mleko",
-		"name": "Kawa z mlekiem",
-		"category": "Napoje",
-		"calories": 75,
-		"protein": 3.8,
-		"fat": 2.5,
-		"carbs": 10.0,
-		"type": "ml"
-	},
-	{
-		"id": "piwo_zero",
-		"name": "Piwo 0%",
-		"category": "Napoje",
-		"calories": 50,
-		"protein": 0.8,
-		"fat": 0.0,
-		"carbs": 11.3,
-		"type": "ml"
-	},
-	{
-		"id": "pepsi",
-		"name": "Pepsi",
-		"category": "Napoje",
-		"calories": 108,
-		"protein": 0.0,
-		"fat": 0.0,
-		"carbs": 27.5,
-		"type": "ml"
-	},
-	{
-		"id": "pizza_margherita_100g",
-		"name": "Pizza margherita (100g)",
-		"category": "Fast food",
-		"calories": 250,
-		"protein": 10.0,
-		"fat": 9.0,
-		"carbs": 30.0,
-		"type": "g"
-	},
-	{
-		"id": "pizza_margherita_cala",
-		"name": "Pizza margherita (cała)",
-		"category": "Fast food",
-		"calories": 2000,
-		"protein": 80.0,
-		"fat": 72.0,
-		"carbs": 240.0,
-		"type": "pcs"
-	},
-	{
-		"id": "kebab",
-		"name": "Kebab",
-		"category": "Fast food",
-		"calories": 880,
-		"protein": 44.0,
-		"fat": 44.0,
-		"carbs": 80.0,
-		"type": "pcs"
-	},
-	{
-		"id": "frytki",
-		"name": "Frytki",
-		"category": "Fast food",
-		"calories": 310,
-		"protein": 4.0,
-		"fat": 15.0,
-		"carbs": 41.0,
-		"type": "g"
-	},
-	{
-		"id": "hamburger",
-		"name": "Hamburger",
-		"category": "Fast food",
-		"calories": 295,
-		"protein": 14.0,
-		"fat": 14.0,
-		"carbs": 30.0,
-		"type": "pcs"
-	},
-	{
-		"id": "big_mac",
-		"name": "Big Mac",
-		"category": "Fast food",
-		"calories": 505,
-		"protein": 26.0,
-		"fat": 25.0,
-		"carbs": 42.0,
-		"type": "pcs"
-	},
-	{
-		"id": "hotdog",
-		"name": "Hot dog",
-		"category": "Fast food",
-		"calories": 390,
-		"protein": 14.0,
-		"fat": 21.0,
-		"carbs": 36.0,
-		"type": "pcs"
-	},
-	{
-		"id": "zapiekanka",
-		"name": "Zapiekanka",
-		"category": "Fast food",
-		"calories": 520,
-		"protein": 20.0,
-		"fat": 22.0,
-		"carbs": 58.0,
-		"type": "pcs"
-	},
-	{
-		"id": "schabowy",
-		"name": "Kotlet schabowy",
-		"category": "Dania domowe",
-		"calories": 290,
-		"protein": 22.0,
-		"fat": 20.0,
-		"carbs": 8.0,
-		"type": "g"
-	},
-	{
-		"id": "pierogi_ruskie",
-		"name": "Pierogi ruskie",
-		"category": "Dania domowe",
-		"calories": 220,
-		"protein": 7.0,
-		"fat": 7.0,
-		"carbs": 32.0,
-		"type": "g"
-	},
-	{
-		"id": "rosol",
-		"name": "Rosół",
-		"category": "Dania domowe",
-		"calories": 87,
-		"protein": 7.5,
-		"fat": 5.0,
-		"carbs": 2.5,
-		"type": "ml"
-	},
-	{
-		"id": "zurek",
-		"name": "Żurek",
-		"category": "Dania domowe",
-		"calories": 162,
-		"protein": 7.5,
-		"fat": 10.0,
-		"carbs": 12.5,
-		"type": "ml"
-	},
-	{
-		"id": "golabki",
-		"name": "Gołąbki",
-		"category": "Dania domowe",
-		"calories": 150,
-		"protein": 10.0,
-		"fat": 7.0,
-		"carbs": 12.0,
-		"type": "g"
-	},
-	{
-		"id": "bigos",
-		"name": "Bigos",
-		"category": "Dania domowe",
-		"calories": 120,
-		"protein": 6.0,
-		"fat": 8.0,
-		"carbs": 5.0,
-		"type": "g"
-	},
-	{
-		"id": "nalesniki",
-		"name": "Naleśniki",
-		"category": "Dania domowe",
-		"calories": 170,
-		"protein": 5.0,
-		"fat": 6.0,
-		"carbs": 24.0,
-		"type": "pcs"
-	},
-	{
-		"id": "czekolada_mleczna",
-		"name": "Czekolada mleczna",
-		"category": "Słodycze",
-		"calories": 535,
-		"protein": 7.0,
-		"fat": 30.0,
-		"carbs": 58.0,
-		"type": "pcs"
-	},
-	{
-		"id": "snickers",
-		"name": "Snickers",
-		"category": "Słodycze",
-		"calories": 244,
-		"protein": 4.0,
-		"fat": 12.0,
-		"carbs": 30.5,
-		"type": "pcs"
-	},
-	{
-		"id": "kinder_bueno",
-		"name": "Kinder Bueno",
-		"category": "Słodycze",
-		"calories": 245,
-		"protein": 3.9,
-		"fat": 16.3,
-		"carbs": 21.1,
-		"type": "pcs"
-	},
-	{
-		"id": "nutella",
-		"name": "Nutella",
-		"category": "Słodycze",
-		"calories": 539,
-		"protein": 6.0,
-		"fat": 31.0,
-		"carbs": 57.0,
-		"type": "g"
-	},
-	{
-		"id": "chipsy",
-		"name": "Chipsy",
-		"category": "Słodycze",
-		"calories": 540,
-		"protein": 6.0,
-		"fat": 35.0,
-		"carbs": 50.0,
-		"type": "g"
-	}
+  {
+    "id": "jajko_l",
+    "name": "Jajko (sztuki)",
+    "category": "Nabiał i jajka",
+    "calories": 78,
+    "protein": 7.0,
+    "fat": 5.3,
+    "carbs": 0.4,
+    "type": "pcs"
+  },
+  {
+    "id": "mleko_2",
+    "name": "Mleko 2% (ml)",
+    "category": "Nabiał i jajka",
+    "calories": 125,
+    "protein": 8.5,
+    "fat": 5.0,
+    "carbs": 11.8,
+    "type": "ml"
+  },
+  {
+    "id": "twarog_chudy",
+    "name": "Twaróg chudy (gramy)",
+    "category": "Nabiał i jajka",
+    "calories": 99,
+    "protein": 19.0,
+    "fat": 0.5,
+    "carbs": 3.5,
+    "type": "g"
+  },
+  {
+    "id": "serek_wiejski",
+    "name": "Serek wiejski (gramy)",
+    "category": "Nabiał i jajka",
+    "calories": 97,
+    "protein": 11.0,
+    "fat": 5.0,
+    "carbs": 4.0,
+    "type": "g"
+  },
+  {
+    "id": "jogurt_grecki",
+    "name": "Jogurt grecki (gramy)",
+    "category": "Nabiał i jajka",
+    "calories": 97,
+    "protein": 8.5,
+    "fat": 4.8,
+    "carbs": 3.8,
+    "type": "g"
+  },
+  {
+    "id": "ser_zolty",
+    "name": "Ser żółty (gramy)",
+    "category": "Nabiał i jajka",
+    "calories": 350,
+    "protein": 25.0,
+    "fat": 27.0,
+    "carbs": 1.0,
+    "type": "g"
+  },
+  {
+    "id": "ser_zolty_plaster",
+    "name": "Ser żółty (sztuki)",
+    "category": "Nabiał i jajka",
+    "calories": 53,
+    "protein": 3.8,
+    "fat": 4.1,
+    "carbs": 0.1,
+    "type": "pcs"
+  },
+  {
+    "id": "maslo",
+    "name": "Masło (gramy)",
+    "category": "Nabiał i jajka",
+    "calories": 720,
+    "protein": 1.0,
+    "fat": 81.0,
+    "carbs": 1.0,
+    "type": "g"
+  },
+  {
+    "id": "piers_kurczaka",
+    "name": "Pierś z kurczaka (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 120,
+    "protein": 22.0,
+    "fat": 2.0,
+    "carbs": 0.0,
+    "type": "g"
+  },
+  {
+    "id": "schab",
+    "name": "Schab (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 145,
+    "protein": 21.0,
+    "fat": 6.0,
+    "carbs": 0.0,
+    "type": "g"
+  },
+  {
+    "id": "kielbasa_zwyczajna",
+    "name": "Kiełbasa zwyczajna (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 290,
+    "protein": 14.0,
+    "fat": 26.0,
+    "carbs": 2.0,
+    "type": "g"
+  },
+  {
+    "id": "szynka",
+    "name": "Szynka (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 120,
+    "protein": 19.0,
+    "fat": 4.0,
+    "carbs": 1.0,
+    "type": "g"
+  },
+  {
+    "id": "parowki",
+    "name": "Parówki (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 270,
+    "protein": 11.0,
+    "fat": 24.0,
+    "carbs": 3.0,
+    "type": "g"
+  },
+  {
+    "id": "losos",
+    "name": "Łosoś (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 200,
+    "protein": 20.0,
+    "fat": 13.0,
+    "carbs": 0.0,
+    "type": "g"
+  },
+  {
+    "id": "tunczyk",
+    "name": "Tuńczyk (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 115,
+    "protein": 25.0,
+    "fat": 1.0,
+    "carbs": 0.0,
+    "type": "g"
+  },
+  {
+    "id": "salami",
+    "name": "Salami (gramy)",
+    "category": "Mięso i ryby",
+    "calories": 400,
+    "protein": 22.0,
+    "fat": 34.0,
+    "carbs": 2.0,
+    "type": "g"
+  },
+  {
+    "id": "ryz_bialy",
+    "name": "Ryż biały (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 350,
+    "protein": 7.0,
+    "fat": 1.0,
+    "carbs": 78.0,
+    "type": "g"
+  },
+  {
+    "id": "makaron",
+    "name": "Makaron (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 360,
+    "protein": 12.0,
+    "fat": 1.5,
+    "carbs": 72.0,
+    "type": "g"
+  },
+  {
+    "id": "platki_owsiane",
+    "name": "Płatki owsiane (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 370,
+    "protein": 12.0,
+    "fat": 7.0,
+    "carbs": 60.0,
+    "type": "g"
+  },
+  {
+    "id": "chleb",
+    "name": "Kromka chleba (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 250,
+    "protein": 8.0,
+    "fat": 2.0,
+    "carbs": 50.0,
+    "type": "g"
+  },
+  {
+    "id": "chleb_kromka",
+    "name": "Kromka chleba (sztuki)",
+    "category": "Produkty zbożowe",
+    "calories": 87,
+    "protein": 2.1,
+    "fat": 0.5,
+    "carbs": 18.2,
+    "type": "pcs"
+  },
+  {
+    "id": "bulka",
+    "name": "Bułka (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 270,
+    "protein": 8.0,
+    "fat": 3.0,
+    "carbs": 55.0,
+    "type": "g"
+  },
+  {
+    "id": "bagietka",
+    "name": "Bagietka (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 280,
+    "protein": 8.0,
+    "fat": 1.5,
+    "carbs": 57.0,
+    "type": "g"
+  },
+  {
+    "id": "tortilla",
+    "name": "Tortilla (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 310,
+    "protein": 8.0,
+    "fat": 8.0,
+    "carbs": 50.0,
+    "type": "g"
+  },
+  {
+    "id": "kajzerka",
+    "name": "Bułka kajzerka (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 270,
+    "protein": 8.0,
+    "fat": 3.0,
+    "carbs": 55.0,
+    "type": "g"
+  },
+  {
+    "id": "chleb_tostowy",
+    "name": "Chleb tostowy (gramy)",
+    "category": "Produkty zbożowe",
+    "calories": 265,
+    "protein": 8.0,
+    "fat": 4.0,
+    "carbs": 49.0,
+    "type": "g"
+  },
+  {
+    "id": "ziemniaki",
+    "name": "Ziemniaki (gramy)",
+    "category": "Warzywa",
+    "calories": 77,
+    "protein": 2.0,
+    "fat": 0.1,
+    "carbs": 17.0,
+    "type": "g"
+  },
+  {
+    "id": "pomidor",
+    "name": "Pomidor (gramy)",
+    "category": "Warzywa",
+    "calories": 19,
+    "protein": 1.0,
+    "fat": 0.2,
+    "carbs": 4.0,
+    "type": "g"
+  },
+  {
+    "id": "ogorek",
+    "name": "Ogórek (gramy)",
+    "category": "Warzywa",
+    "calories": 15,
+    "protein": 0.7,
+    "fat": 0.1,
+    "carbs": 3.0,
+    "type": "g"
+  },
+  {
+    "id": "papryka",
+    "name": "Papryka (gramy)",
+    "category": "Warzywa",
+    "calories": 31,
+    "protein": 1.0,
+    "fat": 0.3,
+    "carbs": 6.0,
+    "type": "g"
+  },
+  {
+    "id": "cebula",
+    "name": "Cebula (gramy)",
+    "category": "Warzywa",
+    "calories": 40,
+    "protein": 1.0,
+    "fat": 0.1,
+    "carbs": 9.0,
+    "type": "g"
+  },
+  {
+    "id": "banan",
+    "name": "Banan (sztuki)",
+    "category": "Owoce",
+    "calories": 95,
+    "protein": 1.1,
+    "fat": 0.3,
+    "carbs": 23.0,
+    "type": "pcs"
+  },
+  {
+    "id": "jablko",
+    "name": "Jabłko (sztuki)",
+    "category": "Owoce",
+    "calories": 80,
+    "protein": 0.4,
+    "fat": 0.2,
+    "carbs": 21.0,
+    "type": "pcs"
+  },
+  {
+    "id": "truskawki",
+    "name": "Truskawki (gramy)",
+    "category": "Owoce",
+    "calories": 32,
+    "protein": 0.7,
+    "fat": 0.3,
+    "carbs": 7.0,
+    "type": "g"
+  },
+  {
+    "id": "winogrona",
+    "name": "Winogrona (gramy)",
+    "category": "Owoce",
+    "calories": 69,
+    "protein": 0.7,
+    "fat": 0.2,
+    "carbs": 18.0,
+    "type": "g"
+  },
+  {
+    "id": "maslo_orzechowe",
+    "name": "Masło orzechowe (gramy)",
+    "category": "Tłuszcze",
+    "calories": 600,
+    "protein": 25.0,
+    "fat": 49.0,
+    "carbs": 14.0,
+    "type": "g"
+  },
+  {
+    "id": "oliwa",
+    "name": "Oliwa z oliwek (gramy)",
+    "category": "Tłuszcze",
+    "calories": 884,
+    "protein": 0.0,
+    "fat": 100.0,
+    "carbs": 0.0,
+    "type": "g"
+  },
+  {
+    "id": "orzechy_wloskie",
+    "name": "Orzechy włoskie (gramy)",
+    "category": "Tłuszcze",
+    "calories": 650,
+    "protein": 15.0,
+    "fat": 65.0,
+    "carbs": 14.0,
+    "type": "g"
+  },
+  {
+    "id": "majonez",
+    "name": "Majonez (gramy)",
+    "category": "Dodatki",
+    "calories": 680,
+    "protein": 1.0,
+    "fat": 75.0,
+    "carbs": 2.0,
+    "type": "g"
+  },
+  {
+    "id": "ketchup",
+    "name": "Ketchup (gramy)",
+    "category": "Dodatki",
+    "calories": 100,
+    "protein": 1.0,
+    "fat": 0.3,
+    "carbs": 24.0,
+    "type": "g"
+  },
+  {
+    "id": "musztarda",
+    "name": "Musztarda (gramy)",
+    "category": "Dodatki",
+    "calories": 66,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 6.0,
+    "type": "g"
+  },
+  {
+    "id": "sos_czosnkowy",
+    "name": "Sos czosnkowy (gramy)",
+    "category": "Dodatki",
+    "calories": 350,
+    "protein": 2.0,
+    "fat": 35.0,
+    "carbs": 5.0,
+    "type": "g"
+  },
+  {
+    "id": "cola",
+    "name": "Cola (ml)",
+    "category": "Napoje",
+    "calories": 105,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 26.5,
+    "type": "ml"
+  },
+  {
+    "id": "sok_pomaranczowy",
+    "name": "Sok pomarańczowy (ml)",
+    "category": "Napoje",
+    "calories": 113,
+    "protein": 1.8,
+    "fat": 0.5,
+    "carbs": 25.0,
+    "type": "ml"
+  },
+  {
+    "id": "energetyk",
+    "name": "Energetyk (ml)",
+    "category": "Napoje",
+    "calories": 113,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 27.5,
+    "type": "ml"
+  },
+  {
+    "id": "ice_tea",
+    "name": "Ice tea (ml)",
+    "category": "Napoje",
+    "calories": 70,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 17.5,
+    "type": "ml"
+  },
+  {
+    "id": "kawa_mleko",
+    "name": "Kawa z mlekiem (ml)",
+    "category": "Napoje",
+    "calories": 75,
+    "protein": 3.8,
+    "fat": 2.5,
+    "carbs": 10.0,
+    "type": "ml"
+  },
+  {
+    "id": "piwo_zero",
+    "name": "Piwo 0% (ml)",
+    "category": "Napoje",
+    "calories": 50,
+    "protein": 0.8,
+    "fat": 0.0,
+    "carbs": 11.3,
+    "type": "ml"
+  },
+  {
+    "id": "pepsi",
+    "name": "Pepsi (ml)",
+    "category": "Napoje",
+    "calories": 108,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 27.5,
+    "type": "ml"
+  },
+  {
+    "id": "pizza_margherita_100g",
+    "name": "Pizza margherita (gramy)",
+    "category": "Fast food",
+    "calories": 250,
+    "protein": 10.0,
+    "fat": 9.0,
+    "carbs": 30.0,
+    "type": "g"
+  },
+  {
+    "id": "pizza_margherita_cala",
+    "name": "Pizza margherita (cała) (sztuki)",
+    "category": "Fast food",
+    "calories": 2000,
+    "protein": 80.0,
+    "fat": 72.0,
+    "carbs": 240.0,
+    "type": "pcs"
+  },
+  {
+    "id": "kebab",
+    "name": "Kebab (sztuki)",
+    "category": "Fast food",
+    "calories": 880,
+    "protein": 44.0,
+    "fat": 44.0,
+    "carbs": 80.0,
+    "type": "pcs"
+  },
+  {
+    "id": "frytki",
+    "name": "Frytki (gramy)",
+    "category": "Fast food",
+    "calories": 310,
+    "protein": 4.0,
+    "fat": 15.0,
+    "carbs": 41.0,
+    "type": "g"
+  },
+  {
+    "id": "hamburger",
+    "name": "Hamburger (sztuki)",
+    "category": "Fast food",
+    "calories": 295,
+    "protein": 14.0,
+    "fat": 14.0,
+    "carbs": 30.0,
+    "type": "pcs"
+  },
+  {
+    "id": "big_mac",
+    "name": "Big Mac (sztuki)",
+    "category": "Fast food",
+    "calories": 505,
+    "protein": 26.0,
+    "fat": 25.0,
+    "carbs": 42.0,
+    "type": "pcs"
+  },
+  {
+    "id": "hotdog",
+    "name": "Hot dog (sztuki)",
+    "category": "Fast food",
+    "calories": 390,
+    "protein": 14.0,
+    "fat": 21.0,
+    "carbs": 36.0,
+    "type": "pcs"
+  },
+  {
+    "id": "zapiekanka",
+    "name": "Zapiekanka (sztuki)",
+    "category": "Fast food",
+    "calories": 520,
+    "protein": 20.0,
+    "fat": 22.0,
+    "carbs": 58.0,
+    "type": "pcs"
+  },
+  {
+    "id": "schabowy",
+    "name": "Kotlet schabowy (gramy)",
+    "category": "Dania domowe",
+    "calories": 290,
+    "protein": 22.0,
+    "fat": 20.0,
+    "carbs": 8.0,
+    "type": "g"
+  },
+  {
+    "id": "pierogi_ruskie",
+    "name": "Pierogi ruskie (gramy)",
+    "category": "Dania domowe",
+    "calories": 220,
+    "protein": 7.0,
+    "fat": 7.0,
+    "carbs": 32.0,
+    "type": "g"
+  },
+  {
+    "id": "rosol",
+    "name": "Rosół (ml)",
+    "category": "Dania domowe",
+    "calories": 87,
+    "protein": 7.5,
+    "fat": 5.0,
+    "carbs": 2.5,
+    "type": "ml"
+  },
+  {
+    "id": "zurek",
+    "name": "Żurek (ml)",
+    "category": "Dania domowe",
+    "calories": 162,
+    "protein": 7.5,
+    "fat": 10.0,
+    "carbs": 12.5,
+    "type": "ml"
+  },
+  {
+    "id": "golabki",
+    "name": "Gołąbki (gramy)",
+    "category": "Dania domowe",
+    "calories": 150,
+    "protein": 10.0,
+    "fat": 7.0,
+    "carbs": 12.0,
+    "type": "g"
+  },
+  {
+    "id": "bigos",
+    "name": "Bigos (gramy)",
+    "category": "Dania domowe",
+    "calories": 120,
+    "protein": 6.0,
+    "fat": 8.0,
+    "carbs": 5.0,
+    "type": "g"
+  },
+  {
+    "id": "nalesniki",
+    "name": "Naleśniki (sztuki)",
+    "category": "Dania domowe",
+    "calories": 170,
+    "protein": 5.0,
+    "fat": 6.0,
+    "carbs": 24.0,
+    "type": "pcs"
+  },
+  {
+    "id": "czekolada_mleczna",
+    "name": "Czekolada mleczna (sztuki)",
+    "category": "Słodycze",
+    "calories": 535,
+    "protein": 7.0,
+    "fat": 30.0,
+    "carbs": 58.0,
+    "type": "pcs"
+  },
+  {
+    "id": "snickers",
+    "name": "Snickers (sztuki)",
+    "category": "Słodycze",
+    "calories": 244,
+    "protein": 4.0,
+    "fat": 12.0,
+    "carbs": 30.5,
+    "type": "pcs"
+  },
+  {
+    "id": "kinder_bueno",
+    "name": "Kinder Bueno (sztuki)",
+    "category": "Słodycze",
+    "calories": 245,
+    "protein": 3.9,
+    "fat": 16.3,
+    "carbs": 21.1,
+    "type": "pcs"
+  },
+  {
+    "id": "nutella",
+    "name": "Nutella (gramy)",
+    "category": "Słodycze",
+    "calories": 539,
+    "protein": 6.0,
+    "fat": 31.0,
+    "carbs": 57.0,
+    "type": "g"
+  },
+  {
+    "id": "chipsy",
+    "name": "Chipsy (gramy)",
+    "category": "Słodycze",
+    "calories": 540,
+    "protein": 6.0,
+    "fat": 35.0,
+    "carbs": 50.0,
+    "type": "g"
+  }
 ]
