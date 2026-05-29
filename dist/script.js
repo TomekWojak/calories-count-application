@@ -60,9 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
         return selectedProduct;
     };
     const clearInputs = () => {
-        if (chooseProductInput && quantityInput) {
+        const products = document.querySelectorAll(".custom-select-food");
+        if (chooseProductInput && quantityInput && searchEngine) {
             chooseProductInput.value = "Wybierz produkt";
             quantityInput.value = "";
+            searchEngine.value = "";
+            products.forEach((product) => product.classList.remove("hidden"));
         }
     };
     const changeValueOfDailyProgress = (calories, protein, fats) => {

@@ -728,5 +728,45 @@
 		"fat": 1.7,
 		"carbs": 0.1,
 		"type": "pcs"
+	},
+	{
+		"id": "dzem_truskawkowy",
+		"name": "Dżem truskawkowy (gramy)",
+		"category": "Dodatki",
+		"calories": 150,
+		"protein": 0.5,
+		"fat": 0.1,
+		"carbs": 36.0,
+		"type": "g"
+	},
+	{
+		"id": "dzem_brzoskwiniowy",
+		"name": "Dżem brzoskwiniowy (gramy)",
+		"category": "Dodatki",
+		"calories": 155,
+		"protein": 0.4,
+		"fat": 0.1,
+		"carbs": 37.5,
+		"type": "g"
+	},
+	{
+		"id": "dzem_czarna_porzeczka",
+		"name": "Dżem z czarnej porzeczki (gramy)",
+		"category": "Dodatki",
+		"calories": 160,
+		"protein": 0.6,
+		"fat": 0.2,
+		"carbs": 38.0,
+		"type": "g"
+	},
+	{
+		"id": "ser_bialy_tlusty",
+		"name": "Ser biały tłusty (gramy)",
+		"category": "Nabiał i jajka",
+		"calories": 175,
+		"protein": 15.0,
+		"fat": 10.0,
+		"carbs": 3.5,
+		"type": "g"
 	}
 ]

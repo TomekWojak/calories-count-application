@@ -80,9 +80,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		return selectedProduct;
 	};
 	const clearInputs = () => {
-		if (chooseProductInput && quantityInput) {
+		const products = document.querySelectorAll<HTMLLIElement>(
+			".custom-select-food",
+		);
+		if (chooseProductInput && quantityInput && searchEngine) {
 			chooseProductInput.value = "Wybierz produkt";
 			quantityInput.value = "";
+			searchEngine.value = "";
+			products.forEach((product) => product.classList.remove("hidden"));
 		}
 	};
 
