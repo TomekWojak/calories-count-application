@@ -540,13 +540,153 @@
 		"type": "pcs"
 	},
 	{
-		"id": "big_mac",
-		"name": "Big Mac (sztuki)",
+		"id": "mcd_frytki_male",
+		"name": "Frytki McDonald's (małe) (sztuki)",
 		"category": "Fast food",
-		"calories": 505,
-		"protein": 26.0,
-		"fat": 25.0,
-		"carbs": 42.0,
+		"calories": 231,
+		"protein": 3.0,
+		"fat": 11.0,
+		"carbs": 30.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_frytki_srednie",
+		"name": "Frytki McDonald's (średnie) (sztuki)",
+		"category": "Fast food",
+		"calories": 353,
+		"protein": 4.6,
+		"fat": 17.0,
+		"carbs": 46.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_frytki_duze",
+		"name": "Frytki McDonald's (duże) (sztuki)",
+		"category": "Fast food",
+		"calories": 434,
+		"protein": 5.7,
+		"fat": 21.0,
+		"carbs": 57.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_cheeseburger",
+		"name": "Cheeseburger McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 302,
+		"protein": 16.0,
+		"fat": 12.0,
+		"carbs": 31.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_jalapeno_burger",
+		"name": "Jalapeno Burger McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 311,
+		"protein": 15.0,
+		"fat": 13.0,
+		"carbs": 31.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_chikker",
+		"name": "Chikker McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 319,
+		"protein": 12.0,
+		"fat": 12.0,
+		"carbs": 39.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_mcchicken",
+		"name": "McChicken McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 426,
+		"protein": 21.0,
+		"fat": 16.0,
+		"carbs": 47.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_wiesmac",
+		"name": "WieśMac McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 575,
+		"protein": 29.0,
+		"fat": 34.0,
+		"carbs": 37.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_mccrispy",
+		"name": "McCrispy McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 484,
+		"protein": 24.0,
+		"fat": 19.0,
+		"carbs": 52.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_double_royal",
+		"name": "Podwójny McRoyal McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 743,
+		"protein": 48.0,
+		"fat": 45.0,
+		"carbs": 36.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_nuggets_6",
+		"name": "McNuggets 6 szt. McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 260,
+		"protein": 16.0,
+		"fat": 13.0,
+		"carbs": 19.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_nuggets_9",
+		"name": "McNuggets 9 szt. McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 390,
+		"protein": 24.0,
+		"fat": 19.5,
+		"carbs": 28.5,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_sos_smietankowy",
+		"name": "Sos do nuggetsów (sztuki)",
+		"category": "Dodatki",
+		"calories": 51,
+		"protein": 0.2,
+		"fat": 4.1,
+		"carbs": 3.2,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_mcmuffin_jajko",
+		"name": "McMuffin z jajkiem McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 295,
+		"protein": 17.0,
+		"fat": 12.0,
+		"carbs": 29.0,
+		"type": "pcs"
+	},
+	{
+		"id": "mcd_drwal",
+		"name": "Burger Drwala klasyczny McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 906,
+		"protein": 39.0,
+		"fat": 51.0,
+		"carbs": 71.0,
 		"type": "pcs"
 	},
 	{

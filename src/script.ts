@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const clearStorageBtn =
 		document.querySelector<HTMLButtonElement>(".clear-storage");
 	const history = document.querySelector<HTMLUListElement>(".history");
+	const overlay = document.querySelector<HTMLElement>(".overlay");
+	const saveBtn = document.querySelector<HTMLButtonElement>(".save-btn");
 
 	const handleFoodPanel = () => {
 		const parent = chooseProductInput?.closest(".custom-select-input-box");
@@ -126,7 +128,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			caloriesValue.textContent = String(currentCalories);
 			fatsValue.textContent = String(currentFats);
 
-			setDataToStorage(currentCalories, currentFats, currentProtein);
+			setDataToStorage(
+				currentCalories,
+				currentFats,
+				currentProtein,
+				"foodData",
+			);
 			changeProgressBar([targetProteins, targetFats, targetCalories]);
 		}
 	};
@@ -159,9 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		calories: number,
 		fats: number,
 		protein: number,
+		keyName: string,
+		seen?: boolean,
 	) => {
-		const data = JSON.stringify({ calories, fats, protein });
-		localStorage.setItem("foodData", data);
+		const data = JSON.stringify({ calories, fats, protein, seen });
+		localStorage.setItem(keyName, data);
 	};
 	const setProductDataToStorage = (
 		calories: number,
@@ -203,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const clearStorage = () => {
 		localStorage.removeItem("foodData");
 		localStorage.removeItem("products");
+		localStorage.removeItem("popupData");
 		window.location.reload();
 	};
 
@@ -371,10 +381,66 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	};
+	const handlePopup = () => {
+		const overlay = document.querySelector<HTMLElement>(".overlay");
+		overlay?.classList.toggle("hidden");
+	};
+
+	const handlePopupInfo = (e: Event) => {
+		e.preventDefault();
+
+		const proteinInput =
+			document.querySelector<HTMLInputElement>(".set-protein");
+		const caloriesInput =
+			document.querySelector<HTMLInputElement>(".set-calories");
+		const fatsInput = document.querySelector<HTMLInputElement>(".set-fats");
+
+		let protein = Math.abs(Number(proteinInput?.value));
+		let calories = Math.abs(Number(caloriesInput?.value));
+		let fats = Math.abs(Number(fatsInput?.value));
+
+		assignUserSettings(protein, calories, fats);
+		setDataToStorage(calories, fats, protein, "popupData", true);
+		handlePopup();
+	};
+	const assignUserSettings = (
+		protein: number,
+		calories: number,
+		fats: number,
+	) => {
+		const targetProtein =
+			document.querySelector<HTMLSpanElement>(".target-protein");
+		const targetCalories =
+			document.querySelector<HTMLSpanElement>(".target-calories");
+		const targetFats = document.querySelector<HTMLSpanElement>(".target-fats");
+
+		if (
+			targetCalories &&
+			targetProtein &&
+			targetFats &&
+			protein != null &&
+			calories != null &&
+			fats != null
+		) {
+			targetProtein.textContent = String(protein.toFixed(2));
+			targetCalories.textContent = String(calories.toFixed(2));
+			targetFats.textContent = String(fats.toFixed(2));
+		}
+	};
+	const loadUserSettings = () => {
+		const data = localStorage.getItem("popupData");
+		const parsed = data ? JSON.parse(data) : {};
+
+		if (parsed?.seen) {
+			handlePopup();
+		}
+		assignUserSettings(parsed?.protein, parsed?.calories, parsed?.fats);
+	};
 
 	loadHistory();
 	loadProductsInfo();
 	getDataFromStorage();
+	loadUserSettings();
 	productsList?.addEventListener("click", (e) => {
 		if (e.target instanceof HTMLElement) {
 			if (e.target.closest(".custom-select-food")) {
@@ -386,6 +452,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
+	saveBtn?.addEventListener("click", handlePopupInfo);
 	searchEngine?.addEventListener("keyup", handleProductSearchEngine);
 	calculateBtn?.addEventListener("click", calculate);
 	chooseProductInput?.addEventListener("click", handleFoodPanel);

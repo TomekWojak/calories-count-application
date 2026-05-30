@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchEngine = document.querySelector(".custom-select-search-engine input");
     const clearStorageBtn = document.querySelector(".clear-storage");
     const history = document.querySelector(".history");
+    const overlay = document.querySelector(".overlay");
+    const saveBtn = document.querySelector(".save-btn");
     const handleFoodPanel = () => {
         const parent = chooseProductInput?.closest(".custom-select-input-box");
         const arrow = parent?.querySelector(".custom-select-arrow");
@@ -90,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             proteinsValue.textContent = String(currentProtein);
             caloriesValue.textContent = String(currentCalories);
             fatsValue.textContent = String(currentFats);
-            setDataToStorage(currentCalories, currentFats, currentProtein);
+            setDataToStorage(currentCalories, currentFats, currentProtein, "foodData");
             changeProgressBar([targetProteins, targetFats, targetCalories]);
         }
     };
@@ -111,9 +113,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     };
-    const setDataToStorage = (calories, fats, protein) => {
-        const data = JSON.stringify({ calories, fats, protein });
-        localStorage.setItem("foodData", data);
+    const setDataToStorage = (calories, fats, protein, keyName, seen) => {
+        const data = JSON.stringify({ calories, fats, protein, seen });
+        localStorage.setItem(keyName, data);
     };
     const setProductDataToStorage = (calories, fats, protein, productName, quantity) => {
         const key = "products";
@@ -140,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const clearStorage = () => {
         localStorage.removeItem("foodData");
         localStorage.removeItem("products");
+        localStorage.removeItem("popupData");
         window.location.reload();
     };
     const handleProductSearchEngine = (e) => {
@@ -262,9 +265,49 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     };
+    const handlePopup = () => {
+        const overlay = document.querySelector(".overlay");
+        overlay?.classList.toggle("hidden");
+    };
+    const handlePopupInfo = (e) => {
+        e.preventDefault();
+        const proteinInput = document.querySelector(".set-protein");
+        const caloriesInput = document.querySelector(".set-calories");
+        const fatsInput = document.querySelector(".set-fats");
+        let protein = Math.abs(Number(proteinInput?.value));
+        let calories = Math.abs(Number(caloriesInput?.value));
+        let fats = Math.abs(Number(fatsInput?.value));
+        assignUserSettings(protein, calories, fats);
+        setDataToStorage(calories, fats, protein, "popupData", true);
+        handlePopup();
+    };
+    const assignUserSettings = (protein, calories, fats) => {
+        const targetProtein = document.querySelector(".target-protein");
+        const targetCalories = document.querySelector(".target-calories");
+        const targetFats = document.querySelector(".target-fats");
+        if (targetCalories &&
+            targetProtein &&
+            targetFats &&
+            protein != null &&
+            calories != null &&
+            fats != null) {
+            targetProtein.textContent = String(protein.toFixed(2));
+            targetCalories.textContent = String(calories.toFixed(2));
+            targetFats.textContent = String(fats.toFixed(2));
+        }
+    };
+    const loadUserSettings = () => {
+        const data = localStorage.getItem("popupData");
+        const parsed = data ? JSON.parse(data) : {};
+        if (parsed?.seen) {
+            handlePopup();
+        }
+        assignUserSettings(parsed?.protein, parsed?.calories, parsed?.fats);
+    };
     loadHistory();
     loadProductsInfo();
     getDataFromStorage();
+    loadUserSettings();
     productsList?.addEventListener("click", (e) => {
         if (e.target instanceof HTMLElement) {
             if (e.target.closest(".custom-select-food")) {
@@ -275,6 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+    saveBtn?.addEventListener("click", handlePopupInfo);
     searchEngine?.addEventListener("keyup", handleProductSearchEngine);
     calculateBtn?.addEventListener("click", calculate);
     chooseProductInput?.addEventListener("click", handleFoodPanel);
