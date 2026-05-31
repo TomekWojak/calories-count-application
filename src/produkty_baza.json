@@ -690,6 +690,16 @@
 		"type": "pcs"
 	},
 	{
+		"id": "mcd_big_mac",
+		"name": "Big Mac McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 505,
+		"protein": 26.0,
+		"fat": 25.0,
+		"carbs": 42.0,
+		"type": "pcs"
+	},
+	{
 		"id": "hotdog",
 		"name": "Hot dog (sztuki)",
 		"category": "Fast food",
