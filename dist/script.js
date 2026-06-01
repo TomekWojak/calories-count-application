@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const progressBar = parent?.querySelector(".progress-bar");
             if (progressBar) {
                 progressBar.style.width = `${(100 * currentValue) / targetValue}%`;
+                console.log(currentValue, targetValue);
+                console.log(`${(100 * currentValue) / targetValue}%`);
                 const width = parseFloat(progressBar.style.width);
                 const challengeCompleted = width >= 100;
                 if (challengeCompleted) {
@@ -306,7 +308,6 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     loadHistory();
     loadProductsInfo();
-    getDataFromStorage();
     loadUserSettings();
     productsList?.addEventListener("click", (e) => {
         if (e.target instanceof HTMLElement) {
@@ -323,4 +324,5 @@ document.addEventListener("DOMContentLoaded", function () {
     calculateBtn?.addEventListener("click", calculate);
     chooseProductInput?.addEventListener("click", handleFoodPanel);
     clearStorageBtn?.addEventListener("click", clearStorage);
+    getDataFromStorage();
 });
