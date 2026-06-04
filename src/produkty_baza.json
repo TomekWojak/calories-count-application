@@ -918,5 +918,25 @@
 		"fat": 10.0,
 		"carbs": 3.5,
 		"type": "g"
+	},
+	{
+		"id": "pasztet_100g",
+		"name": "Pasztet pieczony (gramy)",
+		"category": "Mięso i ryby",
+		"calories": 252,
+		"protein": 14.0,
+		"fat": 19.5,
+		"carbs": 5.0,
+		"type": "g"
+	},
+	{
+		"id": "pasztet_drobiowy_g",
+		"name": "Pasztet drobiowy z puszki (gramy)",
+		"category": "Mięso i ryby",
+		"calories": 165,
+		"protein": 11.0,
+		"fat": 12.0,
+		"carbs": 3.0,
+		"type": "g"
 	}
 ]
