@@ -948,5 +948,75 @@
 		"fat": 28.0,
 		"carbs": 36.0,
 		"type": "pcs"
+	},
+	{
+		"id": "kabanosy_wieprzowe_g",
+		"name": "Kabanosy wieprzowe (gramy)",
+		"category": "Mięso i ryby",
+		"calories": 524,
+		"protein": 28.0,
+		"fat": 44.0,
+		"carbs": 4.0,
+		"type": "g"
+	},
+	{
+		"id": "kabanosy_drobiowe_g",
+		"name": "Kabanosy drobiowe (gramy)",
+		"category": "Mięso i ryby",
+		"calories": 482,
+		"protein": 33.0,
+		"fat": 38.0,
+		"carbs": 2.0,
+		"type": "g"
+	},
+	{
+		"id": "tarczynski_exclusive_wieprzowy_paczka",
+		"name": "Kabanosy Tarczyński Wieprzowe (paczka)",
+		"category": "Mięso i ryby",
+		"calories": 472,
+		"protein": 25.2,
+		"fat": 39.6,
+		"carbs": 3.6,
+		"type": "pcs"
+	},
+	{
+		"id": "tarczynski_exclusive_drobiowy_paczka",
+		"name": "Kabanosy Tarczyński Drobiowe (paczka)",
+		"category": "Mięso i ryby",
+		"calories": 434,
+		"protein": 29.7,
+		"fat": 34.2,
+		"carbs": 1.8,
+		"type": "pcs"
+	},
+	{
+		"id": "tarczynski_exclusive_chilli_paczka",
+		"name": "Kabanosy Tarczyński Chilli (paczka)",
+		"category": "Mięso i ryby",
+		"calories": 477,
+		"protein": 24.3,
+		"fat": 40.5,
+		"carbs": 3.8,
+		"type": "pcs"
+	},
+	{
+		"id": "tarczynski_exclusive_ser_paczka",
+		"name": "Kabanosy Tarczyński z serem (paczka)",
+		"category": "Mięso i ryby",
+		"calories": 486,
+		"protein": 26.1,
+		"fat": 41.4,
+		"carbs": 2.2,
+		"type": "pcs"
+	},
+	{
+		"id": "tarczynski_maly_paczka",
+		"name": "Kabanosy Tarczyński (mała paczka)",
+		"category": "Mięso i ryby",
+		"calories": 262,
+		"protein": 14.0,
+		"fat": 22.0,
+		"carbs": 2.0,
+		"type": "pcs"
 	}
 ]
