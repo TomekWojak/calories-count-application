@@ -938,5 +938,15 @@
 		"fat": 12.0,
 		"carbs": 3.0,
 		"type": "g"
+	},
+	{
+		"id": "mcd_mcroyal",
+		"name": "McRoyal McDonald's (sztuki)",
+		"category": "Fast food",
+		"calories": 530,
+		"protein": 31.0,
+		"fat": 28.0,
+		"carbs": 36.0,
+		"type": "pcs"
 	}
 ]
